@@ -1,0 +1,864 @@
+/*** Start Body ***/
+body {
+    margin:  0;
+    font-family: 'Open Sans', sans-serif;  
+}
+/*** End Body ***/
+
+/*** Start Louding ***/
+.loading {
+    display: flex;
+    background: white;
+    position: fixed; 
+    z-index: 10000000;
+    height: 100%;
+    width: 100%;
+    transition:  all .5s;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+}
+.loading img {
+    display: block;
+    width: 10%;
+}
+/*** End Louding ***/
+
+/*** Start Section Header ***/
+ /* Start Scroll Down Javascript */
+.styleNavbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 20vh;
+    background-color: #e72039 ;
+    transition: all 2s ;
+  } 
+ #navbar {
+     overflow: hidden;
+ }
+ #navbar nav ul li:hover a {
+     color: white;
+     opacity: 1;
+ }
+ #navbar:hover h1 {
+    color: white;
+    opacity: 1; 
+ }
+ /* End Scroll Down Javascript */
+header {
+    position: absolute;
+    width: 100%;
+    z-index: 10000;
+}
+/* Start Media */
+.container-media {
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    cursor: pointer;
+    color: #fff;
+  
+}
+.media {
+    display: flex;
+    width: 24%;
+    justify-content: center;
+  /*   padding-top: 5px;
+    padding-left: 110px */
+}
+.media a svg {
+   width: 12px;
+   padding: 6px;
+   fill: white;
+}
+.media a svg path{
+    transition: all  .5s;
+}
+.media a:hover svg path {
+    fill: #e72039;
+}
+/* End Media */
+/* Start Contact */
+.container-contact {
+    display: flex;
+    width: 42%;
+    justify-content: center;   
+}
+.container-contact ul {
+    display: flex;
+}
+.container-contact ul li {
+    padding: 10px;
+    display: inline;
+    font-size: 13px;
+    font-weight: 100;
+    transition: all  .5s;
+}
+.container-contact ul li:hover a {
+    color: #e72039;
+}
+.container-contact ul li a {
+    display: flex;
+    color: white;
+    text-decoration: none ;
+    transition: all  .5s;
+}
+.container-contact ul li a svg {
+ width: 15px;
+ padding-right: 3px;
+ transition: all  .5s;
+}
+.container-contact ul li a:hover svg path {
+    fill: #e72039;
+}
+.container-contact ul li p {
+    padding-left: 5px;
+}
+/* End Contact */
+/* Start Section Seperator */
+.container-seperator{
+    width: 100%;
+    height: .5px;
+    opacity: .3;
+    background-color:rgba(255, 255, 255, .5);
+}
+/* End Section Seperator */
+/* Start Navigation */
+.container-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    margin-top: 5px;
+    margin: 0;
+    transition: all .5s ;
+}
+.div-logo {
+    text-decoration: none;
+    text-align: center;
+    max-width: 30%;
+    width: 25%;    
+}
+.logo {
+    color: white;
+    font-size: 1.2em;
+    font-family: 'Cairo';
+    border-radius: 2px solid;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    padding-top: 2px;
+    transition: all  .5s;
+}
+.logo:hover {
+    color:  #e72039;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .1);
+    cursor: pointer;
+} 
+.container-nav nav {
+    width: 35%;
+    max-width: 45%;
+    justify-content: center;
+    align-items: center
+  }
+.container-nav nav ul  {
+       list-style-type: none; 
+  }
+.container-nav nav ul li {
+    padding: 10px;
+    display: inline;
+}
+.container-nav nav ul li a {
+    color: white;
+    text-decoration: none; 
+    font-size: 15px;
+    font-weight: 100;
+    opacity: .6;
+   transition: all  .5s;
+}
+.container-nav nav ul li:hover a {
+    color: #e72039;
+}
+.slid-nav{
+    display: none;
+}
+.sidenav {
+    display: none;
+}
+/* End Navigation */
+/*** End Section Header ***/
+
+/*** Start Section Hero ***/
+.container-hero{
+    overflow: hidden;
+    width: 100%;
+}
+.text-hero {
+   position: absolute;
+   width: 100%;
+   height: 50%;
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   align-items: center;
+   top: 40%;
+   color: white;
+}
+.text-hero h1 {
+   font-size: 4em;
+   font-family: 'Cairo';
+   font-weight: 800;
+   width: 100%;
+   margin: 0 auto;
+   text-shadow: 0.5px 0.5px #58515140;
+}
+.text-hero p {
+   width: 100%;
+   font-size: 18px;
+    font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,noto sans,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol,noto color emoji; 
+   font-weight: 100;   
+}
+.container-hero .image-hero {
+   width: 100vw;
+   height: 100vh;
+}
+.container-hero .image-hero img {
+   width: 100vw;
+   height: 100vh;
+   object-fit: cover;
+   position: relative;
+   z-index: -2;
+   filter: brightness(.6);
+}
+/*** End Section Hero ***/
+
+/*** Start Section About Us ***/
+.container-about {
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    margin: auto;
+    width: 75%;
+    max-width: 80%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.image-about {
+    width: 40%;
+    max-width: 40%;
+    margin-right: 100px;
+}
+.container-about img {
+    max-width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+.text-about {
+    width: 50%;
+    max-width: 50%;
+    height: auto;
+    color: gray;
+}
+.main-title {
+    font-size: 4em;
+    font-family: 'Cairo';
+    color: #e72039;
+    margin: auto;
+}
+.paragraph h1  {
+   font-size: 1.5em;
+   font-family: 'Cairo';
+   color: gray;
+}
+.paragraph p {
+    opacity: .6;
+    line-height: 1.6;
+}
+/*** End Section About Us ***/
+
+/*** Start Section card ( Working with dentists ) ***/
+.title-work {
+    font-size: 4em;
+    font-family: 'Cairo';
+    color: #e72039;
+    text-align: center;
+}
+.work {
+    margin-top: 10%;
+    justify-content: center;
+    align-items: stretch;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+.container-work {
+    border: 1px solid rgba(255, 32, 57, .6);
+    width: 20%;
+     color: #e72039;
+    text-align: center;
+    margin: 20px;
+    margin-bottom: 70px;
+    padding: 4px;
+    border-radius: 5px;
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 25px;
+    flex-direction: column;
+    transition: all  .5s;
+}
+.container-work:hover {
+    background-color: #e72039;
+    transform: translateY(-25px) !important;
+}
+.card-image{
+     display: flex;
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background-color: #e72039;
+    border-radius: 50%;
+    margin: auto;
+    padding: 5px;
+    top: -30px;
+    transition: all  .5s;
+}
+.container-work:hover  .card-image {
+    background-color: white;
+    border: 1px solid rgba(255, 32, 57, .6);
+}
+.container-work  svg {
+    fill: white;
+    display: flex;
+    width: 20px;
+    height: 20px;
+    margin: auto;
+    transition: all  .5s;
+}
+.container-work:hover svg {
+    fill: #e72039;
+    }
+.container-work div {
+    justify-content: center;
+    align-items: center;
+}
+.image-svg svg {
+    width: 40px;
+} 
+.title-paragraph {
+    font-weight: bold;
+    transition: all  1.5s;
+   }
+.container-work:hover .title-paragraph {
+    color: white;
+}
+.container-work div p {
+    color: grey;
+    line-height: 1.6;
+    transition: all  .5s;
+}
+.container-work:hover div p{
+    color: white;
+}
+/*** End Section card ( Working with dentists ) ***/
+
+/*** Start Section Accordion  (Services) ***/
+/* Start Accordion Javascript*/
+.active-tab{
+    color: #e72039 !important;
+    transition: all 1s;
+}
+.active-tab svg path{
+    fill: #e72039 !important;
+    transition: all 1s;
+}
+.active-tab svg {
+    transform: rotate(45deg)  ;
+}
+/* End Accordion Javascript */
+.container-services {
+    max-width: 90%;
+    display: flex;
+    margin: auto;
+}
+.title-service {
+    font-size: 4em;
+    font-family: 'Cairo';
+    color: #e72039;
+    margin: auto;
+    margin-left: 20px;
+}
+.text-about button {
+    color: grey;
+    line-height: 1.6;
+    font-size: 20px;
+    transition: all 1s ease;
+}
+.accordion {
+    font-size: 1em;
+    font-family: 'Cairo';
+   background-color: white;
+    cursor: pointer;
+    font-weight: 500;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    transition: 0.4s;
+  }
+  .image-accordion {
+    width: 50%;
+  }
+  .text-accordion {
+      max-width: 50%;
+  }
+  .accordion svg {
+    width: 15px;
+    margin-right: 5px;
+    fill: gray;
+    justify-content: center;
+    align-items: center;
+  }
+  .panel {
+    padding: 0 15px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  .panel ul {
+    padding-left: 50px;
+    margin: 0;
+    color: grey;
+    line-height: 1.6;
+    transition: all .5s; 
+  }
+
+/*** End Section Accordion  (Services) ***/
+
+/*** End Section Footer ***/
+.footer {
+    height: 20vh;
+    width: 100%;
+    background-color: #292825;
+     padding: 20px 0;
+     color: white;
+}
+.container-footer {
+    max-width: 1600px;
+    margin: 0;
+    padding: 0;
+} 
+.container-footer h3 {
+    font-size: 25px;
+    font-family: 'Cairo';  
+     margin-left: 90px; 
+}
+.container-footer ul {
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+}
+.container-footer ul li {
+    padding-left: 50px; 
+}
+.bottum-footer {
+    padding: 30px 0;
+    text-align: center;
+    background-color: #242320;
+    color: white;
+}
+/*** End Section Footer ***/
+
+/*******************************************************************************************************/
+/******************************************************************************************************/
+
+@media only screen and (min-width:1440px) { 
+  
+    /* Start Header */
+    /* Start Media */
+    .container-media {
+        height: 80px;
+    }
+    .media {
+        max-width: 25%;
+        width: 30%; 
+    }
+    .media a svg {
+        width: 16px;
+        padding: 11px; 
+    }
+    /* End Media */
+    /* Start Contact */
+    .container-contact {
+     width: 52%;
+    }
+    .container-contact ul li a svg {
+        width: 17px;
+    }
+    .container-contact ul li {
+        font-size: 18px;
+    }
+    .container-nav nav ul li a {
+        font-size: 17px;
+    }
+    .logo{
+        font-size: 1.7em;
+    }
+     /* End Contact */
+     /* End Header */
+
+    /* Start Hero */
+    .text-hero h1 {
+        font-size: 6em;
+    }
+    /* End Hero */
+
+     /* Start Section About Us */
+    .container-about img {
+        height: 70vh;
+    }
+    .container-about {
+        max-width: 80%;
+        height: 70vh;
+   }
+   .image-about {
+    width: 50%;
+    margin-left: 100px;
+   }
+   .text-about {
+    width: 35%;
+    max-width: 35%;
+   }
+  /* End Section About Us */
+   .paragraph p {
+    opacity: .6;
+    line-height: 2;
+   }
+ .work  {
+     max-width: 75%;
+ }
+ /* Start Section Footer*/
+.footer {
+    height: 15vh;
+}
+/* End Section Footer*/
+
+}
+
+/*******************************************************************************************************/
+/******************************************************************************************************/
+@media only screen 
+  and (max-device-width: 30em) 
+  and (orientation: portrait) { 
+/*** Start Section Header ***/
+    .media a svg{
+    width: 15px;
+    }
+    .media {
+        margin-left:  30px;
+    }
+    .container-contact{
+        width: 39%;
+    }
+    .container-nav nav {
+        display: none;
+    }
+    .container-contact ul li a p{
+        display: none;
+    }
+    .container-contact ul li a svg {
+        width: 15px;
+    }
+    .logo {
+        font-size: 1.3em;
+    }
+    .div-logo {
+        width: 30%;
+        margin-left: 28px;
+    }
+    .slid-nav {
+        display: block;
+        color: white;
+        margin-right: 35px;
+        font-size: 25px;
+    }
+    .sidenav {
+        display: block;
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: #e72039;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+      }
+      
+      .sidenav a {
+        margin-bottom: 30px;
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #fff;
+        display: block;
+        transition: 0.3s;
+      }
+      .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+     
+      
+/*** End Section Header ***/
+/*** Start Section Hero ***/
+    .text-hero h1{
+        font-size: 2em;
+        width: 90%;
+    }
+    .text-hero p {
+        width: 90%;
+    }
+ /*** End Section Hero ***/
+ /* Start Section About Us */
+ .container-about {
+    width: 100%;
+    max-width: 90%;
+    height: auto;
+    flex-direction: column;
+ }
+ .image-about {
+     width: 100%;
+     max-width: 100%;
+ }
+ .container-about img {
+     height: 500px;
+ }
+ .text-about {
+    max-width: 85%;
+    width: 85%;
+    margin-top: 30px;
+ }
+ .main-title{
+     font-size: 2em;
+ }
+ .paragraph h1{
+     font-size: 1.2em;
+ }
+ .paragraph p {
+    font-size: 1em;
+ }
+ /* End Section About Us */
+ /* Start Section card ( Working with dentists ) */
+ .title-work {
+     font-size: 2em;
+ }
+ .work{
+    width: 100%;
+    flex-direction: column;
+    margin-top: 50px;
+ }
+ .container-work {
+     width: 80%;
+ }
+/* End Section card ( Working with dentists ) */
+/*** Start Section Accordion  (Services) ***/
+  .title-service{
+      font-size: 2em;
+      margin-left: 0px;
+  }
+  .text-about button {
+      font-size: 1.2em;
+  }
+/*** Start Section Accordion  (Services) ***/
+/* Start Section Footer*/
+.footer {
+    height: 32vh;
+    padding: 20px 0px;
+}
+.container-footer {
+    padding: 0px 35px;
+}
+  .container-footer h3 {
+      font-size: 20px;
+      margin-left: 10px;
+  }
+  .container-footer ul {
+      flex-direction: column;
+      padding: 0;
+      margin-left: 12px;
+  }
+  .container-footer ul li {
+    padding-left: 0;
+    font-size: 12px;
+    line-height: 35px;
+  }
+/* End Section Footer*/
+
+  }
+/*******************************************************************************************************/
+/******************************************************************************************************/
+  @media only screen 
+  and (max-device-width: 50em) 
+  and (orientation: landscape)
+ { 
+ /*** Start Section Header ***/
+    .media {
+        margin-left:  62px;
+    }
+    .media a svg{
+        padding: 13px;
+        width: 16px;
+    }
+    .container-contact{
+        width: 35%;
+    }
+    .container-nav{
+        height: 15vh;
+    }
+    .container-nav nav {
+        display: none;
+    }
+    .container-contact ul li{
+        padding: 15px;
+    }
+    .container-contact ul li a p{
+        display: none;
+    }
+    .container-contact ul li a svg {
+        width: 18px;
+    }
+    .logo {
+        font-size: 1.3em;
+    }
+    .div-logo {
+        width: 30%;
+        margin-left: 28px;
+    }
+    .slid-nav {
+        display: block;
+        color: white;
+        margin-right: 65px;
+        font-size: 30px;
+    }
+    .sidenav {
+        display: block;
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: #e72039;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+      }
+      
+      .sidenav a {
+        margin-bottom: 30px;
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #fff;
+        display: block;
+        transition: 0.3s;
+      }
+      .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+/*** End Section Header ***/
+/*** Start Section Hero ***/
+.text-hero h1{
+    font-size: 3em;
+    width: 90%;
+}
+.text-hero p{
+    width: 80%;
+}
+/*** End Section Hero ***/
+/* Start Section About Us */
+.container-about {
+    width: 100%;
+    max-width: 90%;
+    height: auto;
+    flex-direction: column;
+ }
+ .image-about {
+     width: 100%;
+     max-width: 100%;
+ }
+ .container-about img {
+     height: 400px;
+     width: 100%;
+ }
+ .text-about {
+    max-width: 95%;
+    width: 95%;
+    margin-top: 30px;
+ }
+ .main-title{
+     font-size: 2em;
+ }
+ .paragraph h1{
+     font-size: 1.2em;
+ }
+ .paragraph p {
+    font-size: 1em;
+ }
+ /* End Section About Us */
+ /* Start Section card ( Working with dentists ) */
+ .title-work {
+    font-size: 2em;
+}
+.work{
+   width: 100%;
+   margin-top: 50px;
+}
+.container-work {
+    width: 39%;
+}
+ /* End Section card ( Working with dentists ) */
+/* Start Section Footer*/
+.footer {
+    height: 40vh;
+    padding: 20px 0px;
+}
+.container-footer {
+    padding: 0px 35px;
+}
+  .container-footer h3 {
+      font-size: 20px;
+      margin-left: 10px;
+  }
+  .container-footer ul {
+      flex-direction: column;
+      padding: 0;
+      margin-left: 12px;
+  }
+  .container-footer ul li {
+    padding-left: 0;
+    font-size: 12px;
+    line-height: 30px;
+  }
+/* End Section Footer*/
+
+
+}
+/*******************************************************************************************************/
+/******************************************************************************************************/
+@media only screen 
+and (max-device-width: 60em) 
+and (orientation: landscape) { 
+
+}

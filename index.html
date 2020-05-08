@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petra Dental Laboratories</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Cairo:400,700,900|Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Akronim&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js" integrity="sha256-cyEXrJKjO3YNkpCjPxVBdi7pRJ3EF+okm1oN9Qc4rRY=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js" integrity="sha256-2p2tRZlPowp3P/04Pw2rqVCSbhyV/IB7ZEVUglrDS/c=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollToPlugin3.min.js"></script>
+
+</head>
+
+<body>
+    <!-- ******************* Section Loading ************************** -->
+    <div class="loading">
+       <img src="images/loader.gif" />
+    </div>
+     <!-- ****************** Section Header ************************** -->
+     <header>
+             <div class="container-media header">
+             <div class="media">
+                 <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 333333 333333"
+                         shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
+                         image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd">
+                         <path
+                             d="M333328 63295c-12254 5480-25456 9122-39241 10745 14123-8458 24924-21861 30080-37819-13200 7807-27871 13533-43416 16596-12499-13281-30252-21537-49919-21537-37762 0-68336 30591-68336 68330 0 5326 591 10537 1748 15562-56820-2880-107194-30081-140915-71467-6049 10435-9250 22300-9250 34367v8c0 23696 12031 44654 30389 56876-11202-333-21739-3457-30991-8519v854c0 33138 23554 60789 54852 67039-5734 1557-11787 2417-18023 2417-4417 0-8673-455-12905-1224 8742 27139 33975 46923 63857 47500-23430 18356-52858 29286-84939 29286-5537 0-10931-339-16318-984 30326 19458 66251 30727 104844 30727 125735 0 194551-104198 194551-194543 0-3002-67-5911-191-8852 13354-9553 24932-21609 34097-35333l31-31-6 4z"
+                             fill="#fff" /></svg></a>
+                 <a href="#"><svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision"
+                         text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd"
+                         clip-rule="evenodd" viewBox="0 0 640 640">
+                         <path
+                             d="M380.001 120.001h99.993V0h-99.993c-77.186 0-139.986 62.8-139.986 139.986v60h-80.009V320h79.985v320h120.013V320h99.994l19.996-120.013h-119.99v-60.001c0-10.843 9.154-19.996 19.996-19.996v.012z"
+                             fill="#fff" /></svg></a>
+                 <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 333333 333333"
+                         shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
+                         image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd">
+                         <path
+                             d="M119066 107135h65865v33765l952 2c9173-16456 31602-33765 65046-33765 69550-2 82413 43280 82413 99584v114694l-68689 2V219745c0-24237-504-55437-35716-55437-35765 0-41245 26383-41245 53672v103438h-68626V107137zM71447 47613c0 19716-16000 35715-35716 35715S9 67328 9 47613c0-19716 16006-35716 35722-35716s35716 16000 35716 35716zM9 107135h71438v214281H9V107135z"
+                             fill="#fff" /></svg></a>
+                 <a href="#"><svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision"
+                         text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd"
+                         clip-rule="evenodd" viewBox="0 0 640 640">
+                         <path
+                             d="M184.715 2.752h270.582C556.908 2.752 640 84.816 640 185.069v269.85c0 100.277-83.092 182.317-184.703 182.317H184.715C83.104 637.236 0 555.196 0 454.919v-269.85C0 84.816 83.103 2.752 184.715 2.752zm133.561 145.939c98.741 0 178.868 80.127 178.868 178.868 0 98.753-80.127 178.868-178.868 178.868-98.765 0-178.88-80.115-178.88-178.868 0-98.741 80.115-178.868 178.88-178.868zm0 60.414c65.387 0 118.454 53.056 118.454 118.454s-53.068 118.466-118.454 118.466c-65.41 0-118.466-53.067-118.466-118.466 0-65.398 53.056-118.454 118.466-118.454zM491.321 123.9c16.04 0 29.044 13.004 29.044 29.032 0 16.04-13.004 29.044-29.044 29.044-16.028 0-29.032-13.004-29.032-29.044 0-16.028 13.004-29.032 29.032-29.032zM206.825 54.58H433.21c85.005 0 154.526 69.178 154.526 153.712V435.81c0 84.532-69.52 153.699-154.526 153.699H206.825c-85.005 0-154.537-69.167-154.537-153.7V208.29c0-84.532 69.532-153.71 154.537-153.71z"
+                             fill="#fff" /></svg></a>
+             </div>
+             
+             <div class="container-contact">
+                 <ul>
+                     <li> <a href="mailto:petralab1@hotmail.com"> <svg xmlns="http://www.w3.org/2000/svg"
+                                 viewBox="0 0 3333 2410" shape-rendering="geometricPrecision"
+                                 text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd"
+                                 clip-rule="evenodd">
+                                 <path
+                                     d="M191 0h2951c53 0 100 22 135 56 35 35 56 83 56 135v2028c0 40-12 77-33 107-4 10-10 19-18 27-5 5-11 9-18 13-33 28-76 45-122 45H191c-53 0-100-22-135-56-35-35-56-82-56-135V192C0 139 21 92 56 57S138 1 191 1zm-45 2139l1034-1037L146 259v1880zm1148-944L228 2264h2867L2076 1195l-336 286c-26 23-66 24-94 1l-353-287zm894-95l998 1047V250l-998 850zM240 147l1452 1184L3081 147H240z"
+                                     fill-rule="nonzero" fill="#fff" /></svg> <p>petralab1@hotmail.com</p> </a></li>
+                     <li> <a href="tel:006044779056"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"
+                                 shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
+                                 image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd">
+                                 <path
+                                     d="M17.776 107.907c49.11 33.733 97.832 67.666 138.958 111.356-23.575 104.115 70.512 187.302 156.32 236.318 33.58 19.181 48.427 32.634 85.82 26.174L546.138 626.04C269.012 719.112-42.013 328.623 17.776 107.908zm419.06 336.748l32.303-32.811c9.32-9.473 24.697-9.591 34.17-.272l119.104 117.26c9.473 9.32 9.59 24.698.272 34.17l-32.316 32.812c-9.319 9.473-24.697 9.59-34.17.272L437.097 478.825c-9.473-9.32-9.591-24.697-.26-34.17zM46.808 38.894l23.445-28.465c10.051-12.2 28.264-13.96 40.465-3.91l121.927 100.443c12.201 10.063 13.95 28.264 3.91 40.476l-23.457 28.454c-10.052 12.212-28.264 13.96-40.465 3.91L50.718 79.358c-12.201-10.051-13.973-28.264-3.91-40.465z"
+                                     fill="#fff" /></svg><p> + 604-477-9056</p></a></li>
+                 </ul>
+             </div>
+         </div>
+         <div class="container-seperator"></div>
+         <div class="container-nav " id="navbar">
+            <a  href="javascript:goToSection('home',0)" class="div-logo"><h1 class="logo">Petra Dental <br> Laboratories</h1> </a>
+             <nav>
+                 <ul class="nav">
+                     <li> <a  href="javascript:goToSection('home',0)" >Home</a> </li>
+                     <li> <a  href="javascript:goToSection('about',150)">About Us</a></li>
+                     <li> <a  href="javascript:goToSection('services',150)">Services</a></li>
+                     <li> <a  href="javascript:goToSection('contact',150)">Contact Us</a></li>
+                 </ul>
+             </nav>
+         <span class="slid-nav" onclick="openNav()">&#9776; </span> 
+         </div>
+         
+       <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="javascript:goToSection('home',0)">Home</a>
+    <a href="javascript:goToSection('about',150)">About Us</a>
+    <a href="javascript:goToSection('services',150)">Services</a>
+    <a href="javascript:goToSection('contact',150)">Contact Us</a>
+       </div>
+      
+  
+     </header>
+    <!-- ******************* Section Hero ************************* -->
+    <section class="container-hero" id="home">
+        <div class="text-hero">
+          <h1>WELCOME TO THE PETRA<br> DENTAL LAB</h1>
+            <p>specializes in prosthetics and related dental products for dentists throughout Vancouver BC and beyond.
+            </p>
+        </div>
+        <div class="image-hero">
+            <img src="images/hero.jpg" alt="Image Hero" title="Image Hero">
+        </div>
+
+    </section>
+   
+   
+    <!-- ***************** Section Ahout Us ********************* -->
+    <section id="about" >
+        <div  class="container-about">
+            <div  class="image-about" id="about-img" ><img src="images/about.jpg" alt="Image About Us" title="Image About Us"></div>
+            <div class="text-about" id="about-txt"  >
+                <h1 class="main-title">About us</h1>
+                <div class="paragraph">
+                    <h1>Petra Dental Lab</h1>
+                    <p>specializes in prosthetics and related dental products for dentists throughout Vancouver BC and
+                        beyond.
+                        From our modern laboratory in Maple Ridge, we also offer denture repair and other services to
+                        members of the public.
+                        Our aim is to get it right for the patient, always.<br> Our products and services to dentists
+                        for NHS and private work
+                        include prosthetics, chrome cobalt, denture repairs, mouth guards and bleaching trays.</p>
+                </div>
+                <div class="paragraph">
+                    <h1>At Petra Dental Lab</h1>
+                    <p>we take pride in delivering a high-quality dental product with a high level of customer service.
+                        We treat each case as though we were fitting it to ourselves.<br> This applies to both NHS and
+                        private clients.
+                        BM Dental Laboratory provides high-quality solutions for dentists and patients.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ****************** Section card (Working with dentists) ************************** -->
+    <h1  id="work" class="title-work">Working with dentists</h1>
+    <section class="work">
+        <div class="container-work" id="container-work">
+            <div class="card-image">
+                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" shape-rendering="geometricPrecision"
+                    text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd"
+                    clip-rule="evenodd" viewBox="0 0 640 640">
+                    <path fill-rule="nonzero"
+                        d="M400.54 308.496l114.427 134.517.024.024.023-.024c16.737 19.772 39.355 51.686 52.584 83.54 7.925 19.1 12.59 38.446 10.96 55.832-1.795 19.323-10.854 35.764-30.65 46.536-9.85 5.362-22.287 9.165-37.748 10.984-.496.06-.992.083-1.477.083v.024H131.575c-.78 0-1.535-.071-2.267-.201-15.26-1.866-27.508-5.622-37.182-10.867-20.09-10.89-29.138-27.472-30.756-46.96-1.453-17.47 3.496-36.97 11.74-56.305 14.126-33.083 38.21-66.272 55.17-86.375l110.482-130.82v-159.25a106.4 106.4 0 0 0-1.287-5.245c-.614-2.232-1.3-4.453-2.067-6.65-3.957-11.41-10.063-22.736-18.32-33.661-4.358-5.776-3.2-13.997 2.564-18.355a13.114 13.114 0 0 1 7.901-2.646v-.023h43.713c-10.417-6.461-17.35-17.989-17.35-31.146 0-20.233 16.406-36.639 36.626-36.639 20.233 0 36.627 16.406 36.627 36.639 0 13.157-6.934 24.685-17.351 31.146h102.887c7.24 0 13.122 5.882 13.122 13.122 0 3.555-1.405 6.768-3.697 9.13-5.244 5.988-9.567 12.768-13.098 20.232-3.52 7.43-6.307 15.638-8.493 24.497v158.86zm-69.072 80.068h86.14l-59.293-65.895a13.08 13.08 0 0 1-4.028-9.449V148.088c0-1.003.119-2.02.355-3.023 2.61-11.008 6.118-21.426 10.7-31.11.816-1.713 1.666-3.39 2.54-5.056h-96.45a142.28 142.28 0 0 1 8.693 19.925c.957 2.776 1.82 5.54 2.575 8.304a138.246 138.246 0 0 1 1.772 7.193c.354 1.193.543 2.456.543 3.767v165.156h-.024c0 2.989-1.015 6-3.106 8.457L169.844 456.218c-15.791 18.72-38.15 49.465-51.06 79.714-5.374 12.614-20.008 44.823-2.68 54.213 6.85 3.72 15.956 6.425 27.685 7.89h364.245c11.634-1.453 20.622-4.134 27.378-7.807 14.504-7.902-4.618-43.619-8.776-53.623a202.348 202.348 0 0 0-5.433-11.965c-.744.166-1.547.26-2.315.26H402.17c-6.614 0-12.071-6.142-12.071-13.63v-.012c0-7.488 5.433-13.63 12.071-13.63h103.749c-6.366-10.004-13.051-19.335-19.323-27.413-.579.094-1.205.153-1.784.153h-115.04c-6.627 0-2.08-6.142-2.08-13.642 0-7.5 5.434-13.63 12.083-13.63h84.226l-24.248-28.5a10.84 10.84 0 0 1-4.985 1.228h-103.3c-6.614 0-12.083-6.13-12.083-13.63 0-7.5 5.434-13.63 12.083-13.63zM196.68 133.914c13.902 0 25.182 11.28 25.182 25.182 0 13.914-11.28 25.182-25.182 25.182-13.901 0-25.181-11.268-25.181-25.182 0-13.901 11.28-25.181 25.181-25.181zM177.215-.011c24.661 0 44.646 19.984 44.646 44.634 0 24.662-19.985 44.646-44.646 44.646-24.65 0-44.635-19.984-44.635-44.646 0-24.65 19.985-44.634 44.635-44.634z" />
+                </svg>
+            </div>
+            <div>
+                <p class="title-paragraph">Modern Laboratory</p>
+                <p>Our modern laboratory enables us to provide precision restorations consistently, in
+                    a timely manner</p>
+            </div>
+
+        </div>
+        <div class="container-work">
+            <div class="card-image image-svg">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3333 2017" shape-rendering="geometricPrecision"
+                    text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd"
+                    clip-rule="evenodd">
+                    <path
+                        d="M2561 508l-488-3V177c0-49-20-93-52-125s-76-52-125-52H544c-49 0-93 20-125 52s-52 76-52 125c0 27 21 48 48 48s48-21 48-48c0-22 9-43 24-57 15-15 35-24 57-24h1352c22 0 42 9 57 24s24 35 24 57v1503h-271c-27 0-48 21-48 48 0 26 21 48 48 48h319c27 0 48-21 48-48v-55h290c22-500 739-569 812 0h158l-49-521-517-198-206-446zM72 1018c-40 0-72-22-72-48 0-27 32-48 72-48h648c40 0 72 22 72 48 0 27-32 48-72 48H72zm148-260c-30 0-54-22-54-48 0-27 24-48 54-48h500c30 0 54 22 54 48 0 27-24 48-54 48H220zm69-260c-30 0-54-22-54-48 0-27 24-48 54-48h431c30 0 54 22 54 48 0 27-24 48-54 48H289zm429 1182c26 0 48 21 48 48 0 26-21 48-48 48H545c-49 0-93-21-125-54s-52-79-52-127v-353c0-26 21-48 48-48s48 21 48 48v353c0 23 10 45 25 61 15 15 34 25 56 25h173zm488-314c-180 0-325 146-325 325 0 180 146 325 325 325 180 0 325-146 325-325 0-180-146-325-325-325zm0 200c-69 0-125 56-125 125s56 125 125 125 125-56 125-125-56-125-125-125zm1563-200c-180 0-325 146-325 325 0 180 146 325 325 325 180 0 325-146 325-325 0-180-146-325-325-325zm0 200c-69 0-125 56-125 125s56 125 125 125 125-56 125-125-56-125-125-125zm-333-921l-242-3v312h406l-164-309z" />
+                </svg>
+            </div>
+            <div>
+                <p class="title-paragraph">Free Delivery</p>
+                <p>Providing free delivery and postal labels as part of our service makes the whole process easier for
+                    you
+                </p>
+            </div>
+
+        </div>
+        <div class="container-work">
+            <div class="card-image">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2545 3333" shape-rendering="geometricPrecision"
+                    text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd"
+                    clip-rule="evenodd">
+                    <path
+                        d="M786 850V586c0-128 53-245 137-329 85-85 201-137 329-137h1c128 0 245 53 329 137 85 84 137 201 137 329v267c-57 19-98 72-98 135 0 78 64 142 142 142 79 0 142-64 142-142 0-51-27-95-67-121V585c0-161-66-307-172-413S1413 0 1252 0h-1c-161 0-307 66-413 172S666 424 666 585v289c-34 26-56 67-56 113 0 79 64 142 142 142s142-64 142-142c0-67-46-123-109-138zm-488 5h178c-23 44-37 94-37 147 0 18 2 36 5 54h-88L205 3134h2134l-151-2078h-125c3-17 5-35 5-54 0-53-13-103-37-147h215c38 0 72 15 96 40 24 24 39 56 42 91l160 2203v9c0 38-16 71-41 96-23 23-54 37-88 40H127c-33-2-65-17-88-40-25-24-41-58-41-96v-9L158 986c3-35 18-67 41-91 25-25 58-40 96-40zm727 0h456c-23 44-37 94-37 147 0 18 2 36 5 54h-392c3-17 5-35 5-54 0-53-13-103-37-147z"
+                        fill-rule="nonzero" /></svg>
+            </div>
+            <div>
+                <p class="title-paragraph">Short Notice Orders</p>
+                <p>Our facilities and skills allow us to accommodate short-notice orders, and we are committed to giving
+                    each order our careful and timely attention
+                </p>
+            </div>
+
+        </div>
+        <div class="container-work">
+            <div class="card-image">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 246350 333334" shape-rendering="geometricPrecision"
+                    text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd"
+                    clip-rule="evenodd">
+                    <path
+                        d="M17188 16151C25698 7947 36194 3227 47922 1573c11963-1687 25195-128 38849 4207 7488 2377 13332 4407 18098 6061 9025 3133 13881 4819 18295 4833 5294 17 11670-2268 25469-7215 4288-1537 8986-3222 9446-3385 11927-4217 23540-6287 34244-6057 10807 231 20672 2793 29016 7831 11892 7181 18437 16805 21846 27744 3247 10419 3515 21822 2904 33330-882 16626-3769 32894-8645 48806-4664 15218-11142 30088-19422 44611 4204 26426 5359 50184 4652 71182-731 21685-3428 40358-6807 55974-3697 17090-9007 30290-14886 37138-3360 3914-7121 6137-11193 6396-4326 275-8384-1607-11995-5946-5048-6064-9627-18082-13043-37393-947-5356-1500-11231-1741-13789l-70-737h-2l-150-1517c-3744-37977-7437-75367-40778-75741-15892 3622-24275 11127-28943 22197-5113 12126-6321 29071-7722 49817l-5 71c-193 2870-846 12552-2015 19626-3229 19563-7863 31750-13033 37835-3597 4234-7652 6099-11964 5859-4076-227-7862-2390-11238-6245-5939-6784-11233-19947-14621-37256-2800-14302-4943-33258-6022-56502-952-20499-1069-44366-67-71342-5723-13113-10826-26288-14981-39614-4299-13785-7578-27749-9472-41994C343 68451-840 57556 761 47099c1685-11000 6319-21206 16426-30951zm32417-2415c-9185 1295-17353 4943-23907 11261-7876 7593-11476 15476-12772 23931-1378 9000-287 18933 1165 29845 1783 13413 4915 26702 9039 39927 4133 13252 9272 26427 15059 39592l-10 4c362 820 549 1732 515 2688-1045 27191-942 51213 14 71796 1044 22483 3118 40828 5829 54675 2979 15219 7237 26339 11785 31534 1149 1313 2063 2028 2680 2063 380 21 1014-469 1917-1531 3832-4510 7456-14690 10293-31874 1055-6388 1684-15709 1870-18472l5-71c1476-21840 2756-39697 8684-53759 6319-14985 17389-25013 38220-29586l4 17c410-88 835-136 1270-137 45157-194 49413 42970 53735 86808l149 1517h-3l3 24 72 761c215 2288 710 7541 1645 12828 3024 17099 6622 27192 10351 31671 881 1058 1474 1543 1803 1522 583-37 1483-775 2635-2117 4569-5322 8917-16604 12194-31753 3264-15090 5868-33051 6566-53763 701-20793-497-44434-4834-70856-258-1390-41-2876 724-4195 8349-14341 14823-28996 19410-43963 4578-14937 7287-30211 8116-45826 545-10271 347-20318-2375-29051-2560-8214-7491-15451-16462-20869-6493-3920-14285-5916-22910-6101-9189-197-19336 1642-29917 5383-6486 2293-8035 2848-9398 3337-15189 5444-22206 7960-29604 7935-6483-21-12012-1940-22285-5507-4693-1629-10448-3628-17809-5965-11905-3780-23310-5158-33464-3726z"
+                        fill-rule="nonzero" /></svg>
+            </div>
+            <div>
+                <p class="title-paragraph">Petra Dental Lab</p>
+                <p>Petra Dental Lab believes good communication builds strong relationships with our dentists. The
+                    technician dealing with your case will be available to speak to you directly by phone, email, or if
+                    required, a visit to your surgery
+                </p>
+            </div>
+
+        </div>
+        <div class="container-work">
+            <div class="card-image">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3333 3317" shape-rendering="geometricPrecision"
+                    text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd"
+                    clip-rule="evenodd">
+                    <path
+                        d="M917 1364c112 202 241 396 409 573 168 178 377 340 648 478 20 10 39 10 56 3 26-10 52-31 78-57 20-20 45-52 71-87 104-137 233-307 415-222 4 2 7 4 11 6l607 349c2 1 4 3 6 4 80 55 113 140 114 236 0 98-36 208-89 301-70 123-173 204-292 258-113 52-239 80-360 98-190 28-368 10-550-46-178-55-357-146-553-267l-14-9c-90-56-187-116-282-187-349-263-704-643-935-1061C63 1383-43 1004 15 643c32-198 117-378 265-497C409 42 583-15 808 5c26 2 49 17 61 39l389 658c57 74 64 147 33 220-26 60-78 115-149 167-21 18-46 36-72 55-87 63-186 136-152 222zm294 682c-179-189-316-394-433-606-2-3-4-7-5-11-86-202 68-315 203-414 23-17 45-33 65-50 1-1 2-2 4-3 50-37 86-72 100-104 8-18 5-39-13-61-3-4-6-7-8-11L754 159c-159-7-283 36-374 110-115 93-182 238-208 399-52 323 47 667 225 990 219 397 558 759 891 1010 92 69 184 126 269 179l14 9c185 115 353 200 517 251 159 49 316 65 481 40 109-16 220-40 317-85 91-42 169-103 221-193 41-72 69-153 68-223 0-44-13-82-44-104l-604-347c-67-29-153 84-222 175-30 39-58 76-86 104-40 40-85 74-135 93-58 22-119 23-183-10-288-146-510-319-691-510z"
+                        fill-rule="nonzero" /></svg>
+            </div>
+            <div>
+                <p class="title-paragraph">Sersonal Service</p>
+                <p>We have a professional approach, offer personal service and are attentive to every client’s
+                    individual
+                    needs
+                </p>
+            </div>
+
+        </div>
+    </section>
+    <!-- ***************** Section Accordion  (Services)  ********************** -->
+    <section id="services">
+        <div class="container-about" id="services">
+            <div class="image-about image-accordion" id="services-img"><img src="images/services.jpg" alt="Image Services"
+                    title="Image Services"></div>
+            <div class="text-about text-accordion" id="services-txt">
+                <h1 class="title-service">Services</h1>
+                <button class="accordion active-tab" onclick="myFunction(event)">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3328 3328"
+                            shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
+                            image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd">
+                            <path
+                                d="M487 487C812 162 1238 0 1664 0s852 162 1177 487 487 751 487 1177-162 852-487 1177-751 487-1177 487-852-162-1177-487S0 2090 0 1664 162 812 487 487zm1074 357c0-50 40-90 90-90s90 40 90 90v742h742c50 0 90 40 90 90s-40 90-90 90h-742v742c0 50-40 90-90 90s-90-40-90-90v-742H819c-50 0-90-40-90-90s40-90 90-90h742V844zm102-664c-380 0-759 145-1049 435s-435 669-435 1049 145 759 435 1049 669 435 1049 435 759-145 1049-435 435-669 435-1049-145-759-435-1049-669-435-1049-435z"
+                                fill-rule="nonzero" /></svg>
+                    Private Denture Services</button>
+                <div class="panel" style="display: block; max-height: 225px;">
+                    <ul>
+                        <li>Our prosthetics are produced to the highest standards using top-quality materials.</li>
+                        <li>The excellent fit and aesthetics will please you and your patients.</li>
+                        <li>Finished partial dentures supplied fitted to master model. Private dentures are contoured
+                            (smooth or
+                            stippled) and finished with your selection from our list of private teeth.
+                        </li>
+                        <li>Executive dentures add high-impact acrylic and gum staining with your choice of teeth.
+                        </li>
+                    </ul>
+
+                </div>
+
+                <button class="accordion" onclick="myFunction(event)">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3328 3328"
+                            shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
+                            image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd">
+                            <path
+                                d="M487 487C812 162 1238 0 1664 0s852 162 1177 487 487 751 487 1177-162 852-487 1177-751 487-1177 487-852-162-1177-487S0 2090 0 1664 162 812 487 487zm1074 357c0-50 40-90 90-90s90 40 90 90v742h742c50 0 90 40 90 90s-40 90-90 90h-742v742c0 50-40 90-90 90s-90-40-90-90v-742H819c-50 0-90-40-90-90s40-90 90-90h742V844zm102-664c-380 0-759 145-1049 435s-435 669-435 1049 145 759 435 1049 669 435 1049 435 759-145 1049-435 435-669 435-1049-145-759-435-1049-669-435-1049-435z"
+                                fill-rule="nonzero" /></svg>
+                    Chrome Cobalt Dentures</button>
+                <div class="panel">
+                    <ul>
+                        <li>All chrome cobalt frameworks are quickly and accurately manufactured. This is done by a
+                            local, specialist laboratory, with which we have a close working relationship.
+                        </li>
+                        <li>We are happy to use your designs, or will work with you to supply one.
+                        </li>
+                    </ul>
+                </div>
+
+                <button class="accordion" onclick="myFunction(event)">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3328 3328"
+                            shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
+                            image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd">
+                            <path
+                                d="M487 487C812 162 1238 0 1664 0s852 162 1177 487 487 751 487 1177-162 852-487 1177-751 487-1177 487-852-162-1177-487S0 2090 0 1664 162 812 487 487zm1074 357c0-50 40-90 90-90s90 40 90 90v742h742c50 0 90 40 90 90s-40 90-90 90h-742v742c0 50-40 90-90 90s-90-40-90-90v-742H819c-50 0-90-40-90-90s40-90 90-90h742V844zm102-664c-380 0-759 145-1049 435s-435 669-435 1049 145 759 435 1049 669 435 1049 435 759-145 1049-435 435-669 435-1049-145-759-435-1049-669-435-1049-435z"
+                                fill-rule="nonzero" /></svg>
+                    Bleaching Trays</button>
+                <div class="panel">
+                    <ul>
+                        <li>All of our whitening trays are vacuum-formed for a perfect fit.
+                        </li>
+                        <li>Our trays are scalloped and made with reservoirs unless otherwise stated.
+                        </li>
+                    </ul>
+                </div>
+
+                <button class="accordion" onclick="myFunction(event)">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3328 3328"
+                            shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
+                            image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd">
+                            <path
+                                d="M487 487C812 162 1238 0 1664 0s852 162 1177 487 487 751 487 1177-162 852-487 1177-751 487-1177 487-852-162-1177-487S0 2090 0 1664 162 812 487 487zm1074 357c0-50 40-90 90-90s90 40 90 90v742h742c50 0 90 40 90 90s-40 90-90 90h-742v742c0 50-40 90-90 90s-90-40-90-90v-742H819c-50 0-90-40-90-90s40-90 90-90h742V844zm102-664c-380 0-759 145-1049 435s-435 669-435 1049 145 759 435 1049 669 435 1049 435 759-145 1049-435 435-669 435-1049-145-759-435-1049-669-435-1049-435z"
+                                fill-rule="nonzero" /></svg>
+                    Mouth guards</button>
+                <div class="panel">
+                    <ul>
+                        <li>Once we have received the mould from the dentist, mouth guards are produced quickly in the
+                            latest
+                            high-quality protective material. Available in any combination of colors and thickness.
+
+                        </li>
+                    </ul>
+                </div>
+
+                <button class="accordion" onclick="myFunction(event)">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3328 3328"
+                            shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
+                            image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd">
+                            <path
+                                d="M487 487C812 162 1238 0 1664 0s852 162 1177 487 487 751 487 1177-162 852-487 1177-751 487-1177 487-852-162-1177-487S0 2090 0 1664 162 812 487 487zm1074 357c0-50 40-90 90-90s90 40 90 90v742h742c50 0 90 40 90 90s-40 90-90 90h-742v742c0 50-40 90-90 90s-90-40-90-90v-742H819c-50 0-90-40-90-90s40-90 90-90h742V844zm102-664c-380 0-759 145-1049 435s-435 669-435 1049 145 759 435 1049 669 435 1049 435 759-145 1049-435 435-669 435-1049-145-759-435-1049-669-435-1049-435z"
+                                fill-rule="nonzero" /></svg>
+                    Implants</button>
+                <div class="panel">
+                    <ul>
+                        <li>At Petra Dental Lab we use the finest-quality dental bars and implants to ensure the best
+                            possible
+                            results.</li>
+                        <li>We constantly update and review the technology to make sure our clients receive the best
+                            service and
+                            products.
+                        </li>
+                        <li>We work closely with dentists and patients during the design and manufacturing process and
+                            are always
+                            available to discuss individual cases.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***************** Section Footer  ********************** -->
+    <footer class="footer" id="contact">
+        <div class="container-footer">
+            <h3>CONTACT US </h3>
+            <ul>
+                <li>Phone : 604-477-9056</li>
+                <li>Email : petralab1@hotmail.com</li>
+                <li>Address : #207 22611 Dewdney Trunk Road, Maple Ridge, BC V2X 3K1</li>
+            </ul>
+        </div>
+    </footer>
+    <div class="bottum-footer">
+        © 2020 Petra Dental Laboratories.
+    </div>
+
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
