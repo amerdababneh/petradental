@@ -572,11 +572,13 @@ header {
         width: 15px;
     }
     .logo {
-        font-size: 1.3em;
+        font-size: 1.2em;
     }
     .div-logo {
-        width: 40%;
-        margin-left: 28px;
+		max-width:50%;
+       width: 50%;
+		margin-left: 28px;
+		text-align: left;
     }
     .slid-nav {
         display: block;
